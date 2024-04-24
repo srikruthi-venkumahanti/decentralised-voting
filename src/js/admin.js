@@ -43,7 +43,7 @@ const checkUser = async () =>{
     const accounts = await web3.eth.getAccounts();
 
     if(accounts[0].toLowerCase() != adminAddress.toLowerCase()){
-      window.location.href = 'index.html';
+      window.location.href = '/';
       throw new Error('Unauthorised to add candidates.');
       // alert('Unauthorised to add candidates.');
     }
