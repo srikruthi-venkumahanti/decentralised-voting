@@ -1,0 +1,26 @@
+{
+  "name": "rachana-new",
+  "version": "1.0.0",
+  "description": "blockchain project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srikruthi-venkumahanti/decentralised-voting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srikruthi-venkumahanti/decentralised-voting/issues"
+  },
+  "homepage": "https://github.com/srikruthi-venkumahanti/decentralised-voting#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "properties-reader": "^2.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
