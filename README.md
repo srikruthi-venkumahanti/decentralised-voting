@@ -10,7 +10,7 @@ Truffle
 Installation
 Open a terminal.
 Clone the repository by running the following command:
-git clone https://github.com/Krish-Depani/Decentralized-Voting-System.git
+git clone https://github.com/srikruthi-venkumahanti/decentralised-voting.git
 
 Download and install Ganache.
 
