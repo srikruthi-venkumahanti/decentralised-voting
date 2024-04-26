@@ -2,6 +2,13 @@
 
 Decentralised Voting is a blockchain-based voting system.
 
+# Screenshots 
+
+<img width="1254" alt="Screenshot 2024-04-26 at 11 00 42 AM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/48b55d94-ed7d-4846-89d5-ce6ce8036a0e">
+<img width="1324" alt="Screenshot 2024-04-26 at 11 01 34 AM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/d989e616-44c5-48f6-818e-6177ed844aff">
+
+
+
 ## Requirements
 
 - Node.js
@@ -60,6 +67,7 @@ Decentralised Voting is a blockchain-based voting system.
 8. Now start your application. in the same location in terminal, run:
 
 `npm start`
+
 9. Go to chrome and paste 'http://localhost:3001'
 
 ## Code Structure
