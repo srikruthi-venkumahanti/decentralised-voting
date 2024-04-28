@@ -4,6 +4,7 @@ let adminAddress;
 let electionState;
 let electionCount;
 
+//connect to metamask and contract
 const connectMetamask = async () => {
   if (typeof window.ethereum !== 'undefined') {
     try {
@@ -25,18 +26,22 @@ const connectMetamask = async () => {
   }
 };
 
+//update voting admin address
 const updateAdminAddress = async () => {
   adminAddress = await contract.methods.getVotingAdmin().call();
 }
 
+//to check if election is running
 const updateElectionState = async () => {
   electionState = await contract.methods.getElectionState().call();
 }
 
+//to get election count from contract
 const updateElectionCount = async () => {
   electionCount = await contract.methods.getElectionCount().call();
 }
 
+//check of current user is admin user
 const checkUser = async () =>{
   try{
     console.log('Checking authorisation');
@@ -52,6 +57,7 @@ const checkUser = async () =>{
   }
 }
 
+//function to call startElection() function
 const startElection = async () => {
 
   await updateElectionState();
@@ -62,6 +68,7 @@ const startElection = async () => {
       
       const accounts = await web3.eth.getAccounts();
 
+      //checking admin
       if (accounts[0].toLowerCase() === adminAddress.toLowerCase()) {
         await contract.methods.startElection().send({ from: accounts[0] });
         console.log('Election started');
@@ -80,6 +87,7 @@ const startElection = async () => {
   }
 };
 
+//function to call endElection() function
 const endElection = async () => {
   
   await updateElectionState();
@@ -89,6 +97,7 @@ const endElection = async () => {
     try {
       const accounts = await web3.eth.getAccounts();
 
+      //checking admin
       if (accounts[0].toLowerCase() === adminAddress.toLowerCase()) {
         await contract.methods.endElection().send({ from: accounts[0] });
         console.log('Election ended');
@@ -107,6 +116,7 @@ const endElection = async () => {
   }
 };
 
+//get candidate name from text field and call addCandidate() function
 const addCandidate = async () => {
 
   await updateElectionState();
@@ -136,6 +146,7 @@ const addCandidate = async () => {
   }
 }
 
+//fetch candidates from smart contract and display
 const displayCandidates = async() => {
   try{
 
@@ -168,4 +179,5 @@ document.getElementById('endElectionBtn').addEventListener('click', endElection)
 document.getElementById('addCandidatesTab').addEventListener('click', checkUser);
 document.getElementById('addCandidateButton').addEventListener('click', addCandidate);
 
+//initalize
 connectMetamask();

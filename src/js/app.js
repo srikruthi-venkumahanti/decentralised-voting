@@ -4,6 +4,7 @@ let adminAddress;
 let electionState;
 let electionCount;
 
+//connect metamask and contract
 const connectMetamask = async () => {
   if (typeof window.ethereum !== 'undefined') {
     try {
@@ -22,6 +23,7 @@ const connectMetamask = async () => {
   }
 };
 
+//utility functions
 const updateAdminAddress = async () => {
   adminAddress = await contract.methods.getVotingAdmin().call();
 }
@@ -34,6 +36,7 @@ const updateElectionCount = async () => {
   electionCount = await contract.methods.getElectionCount().call();
 }
 
+//check if current user is admin
 const checkAdmin = async () =>{
   try{
 
@@ -48,6 +51,7 @@ const checkAdmin = async () =>{
   }
 }
 
+//fetch candidates from smart contract and display
 const displayCandidates = async () => {
   console.log('Displaying candidates...');
   const candidateSelect = document.getElementById('candidateSelect');
@@ -85,6 +89,7 @@ const displayCandidates = async () => {
   }
 };
 
+//register vote
 const vote = async () => {
 
   await updateElectionState();

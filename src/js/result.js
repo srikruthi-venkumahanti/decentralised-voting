@@ -4,7 +4,8 @@ let adminAddress;
 let electionState;
 let electionCount;
 
-const connectResultMetamask = async () => {
+//connect Metamask and contract
+const connectMetamask = async () => {
   if (typeof window.ethereum !== 'undefined') {
     try {
       await window.ethereum.request({ method: 'eth_requestAccounts' });
@@ -24,6 +25,7 @@ const connectResultMetamask = async () => {
   }
 };
 
+//utility functions
 const updateAdminAddress = async () => {
   adminAddress = await contract.methods.getVotingAdmin().call();
 }
@@ -36,6 +38,7 @@ const updateElectionCount = async () => {
   electionCount = await contract.methods.getElectionCount().call();
 }
 
+//get winning index from smart contract and display result
 const displayResults = async () => {
 
   await updateElectionState();
@@ -73,4 +76,4 @@ const displayResults = async () => {
 document.getElementById('connectMetamask').addEventListener('click', connectMetamask);
 
 // Initial setup
-connectResultMetamask();
+connectMetamask();
