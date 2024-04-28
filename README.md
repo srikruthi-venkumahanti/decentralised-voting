@@ -24,22 +24,24 @@ Decentralised Voting is a blockchain-based voting system.
 
   `git clone https://github.com/srikruthi-venkumahanti/decentralised-voting.git`
 
-3. Download and install Ganache.
+3. Download and install [Ganache](https://trufflesuite.com/ganache/).
 4. In Ganache, create a workspace and name it.
 5. In the Truffle projects section, click the "ADD PROJECT" button and select `truffle-config.js`.
-6. Download the Metamask extension for your browser.
-7. Create a wallet in Metamask, then import accounts from Ganache.
+6. Download the [Metamask](https://metamask.io/download/) extension for your browser.
+7. Create a wallet in Metamask.
 8. Add a network to Metamask with the following details:
 - Network name: Localhost 3001
 - RPC URL: http://localhost:7545
 - Chain ID: 1337
 - Currency symbol: ETH
 
-9. Install Truffle globally by executing:
+9. Import accounts from Ganache.
 
-`npm -i install truffle` 
+10. Install Truffle globally by executing:
 
-10. Navigate to the root directory of the repository and install the required Node.js modules by running:
+`npm install -g truffle` 
+
+11. Navigate to the root directory of the repository and install the required Node.js modules by running:
 
 `npm install`
 
@@ -68,7 +70,7 @@ Decentralised Voting is a blockchain-based voting system.
 
 `npm start`
 
-9. Go to chrome and paste 'http://localhost:3001'
+9. Go to chrome and paste 'http://localhost:3001/'
 
 ## Code Structure
 
