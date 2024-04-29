@@ -7,6 +7,11 @@ Decentralised Voting is a blockchain-based voting system.
 <img width="1254" alt="Screenshot 2024-04-26 at 11 00 42 AM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/48b55d94-ed7d-4846-89d5-ce6ce8036a0e">
 <img width="1324" alt="Screenshot 2024-04-26 at 11 01 34 AM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/d989e616-44c5-48f6-818e-6177ed844aff">
 
+<img width="1200" alt="Screenshot 2024-04-28 at 5 57 00 PM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/7956b686-81c3-44d7-987f-9734ccdd73f8">
+<img width="1200" alt="Screenshot 2024-04-28 at 6 01 39 PM" src="https://github.com/srikruthi-venkumahanti/decentralised-voting/assets/147205287/ade69f67-358a-46fa-9045-847749b4ea74">
+
+
+
 
 
 ## Requirements
