@@ -1,6 +1,8 @@
-# Decentralised Voting
+# Decentralized Voting
 
-Decentralised Voting is a blockchain-based voting system.
+Decentralized Voting is a blockchain-based voting system.
+
+Watch demo video [here](https://youtu.be/YJ6v2YdTd9s).
 
 # Screenshots 
 
